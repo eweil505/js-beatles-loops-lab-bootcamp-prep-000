@@ -33,3 +33,13 @@ describe('Beatles Loops', function() {
   });
 
 });
+
+function iLoveTheBeatles(n) {
+  var result = [];
+  do {
+    result.push("I love the Beatles!")
+  } while (n < 15) {
+    return result;
+  }
+
+}
