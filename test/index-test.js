@@ -6,6 +6,16 @@ describe('Beatles Loops', function() {
     expect(theBeatlesPlay(musicians, instruments)).toEqual(["John Lennon plays Guitar", "Paul McCartney plays Bass Guitar", "George Harrison plays Lead Guitar", "Ringo Starr plays Drums"]);
   });
 
+  function theBeatlesPlay(musicians, instruments) {
+    var result = [];
+
+    for (var i = 0; i < instruments.length; i++) {
+      result.push(`${musicians[i]} plays ${instruments[i]}`);
+    }
+
+    return result;
+  }
+
   describe('johnLennonFacts', function(){
     it("returns an array of strings with exclamation points", function() {
       expect(johnLennonFacts([
@@ -22,7 +32,7 @@ describe('Beatles Loops', function() {
     });
   });
 
-  function johnLennonFacts(array) {
+function johnLennonFacts(array) {
 var result = [];
 var i = 0;
   while (i < array.length) {
