@@ -58,8 +58,8 @@ function iLoveTheBeatles(n) {
   var result = [];
   do {
     result.push("I love the Beatles!")
-    
-  } while (n > 15) {
+    n--;
+  } while (n > 15 || n === 0) {
     return result;
   }
 
