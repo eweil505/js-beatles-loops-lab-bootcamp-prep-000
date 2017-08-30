@@ -22,6 +22,16 @@ describe('Beatles Loops', function() {
     });
   });
 
+  function johnLennonFacts(array) {
+var result = [];
+var i = 0;
+  while (i < array.length) {
+      result.push(array[i] + "!!!");
+      i++;
+  }
+  return result;
+}
+
   describe('iLoveTheBeatles', function() {
     it("returns an array of 'I love the Beatles!' 8 times when passed the parameter 7 ", function() {
       expect(iLoveTheBeatles(7)).toEqual(["I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!"]);
