@@ -63,7 +63,7 @@ function iLoveTheBeatles(n) {
     do {
       result.push("I love the Beatles!");
       n--;
-    } while (n !== 1);
+    } while (n !== 0);
     return result;
   }
 
